@@ -1,0 +1,249 @@
+ /*Logo bakground for ryzen*/
+.logo-ryzen{
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 900px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(orangered, rgb(19, 18, 17));
+  border-style: solid;
+  border-color: black;
+}
+
+.logo-ryzen img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+  /*Logo bakground for intel*/
+.logo-intel{
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 900px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(rgb(39, 26, 219), rgb(19, 204, 236));
+  border-style: solid;
+  border-color: black;
+}
+
+.logo-intel img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+  /*#################################*/
+
+
+  span{
+    font-size: 40px;
+    color: black;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*All Photo Background code*/
+  .itemOne{
+    background-image: url(../image/ryzenthread.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemTwo{
+    background-image: url(../image/ryzen7.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemThree{
+    background-image: url(../image/inteli5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemFour{
+    background-image: url(../image/inteli3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemFive{
+    background-image: url(../image/ryzen5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemSix{
+    background-image: url(../image/ryzen3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemSeven{
+    background-image: url(../image/intelkf.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemEight{
+    background-image: url(../image/ryzen3d.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .itemNine{
+    background-image: url(../image/intelcore.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  /*#################################*/
+
+
+  .feature {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.699);
+  }
+  
+  .feature img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .feature h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .feature h2 {
+    margin: 0;
+    color: orangered;
+  }
+
+  .feature h4 {
+    margin: 0;
+  }
+
+  .feature p {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .description {
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #cccccccb;
+  }
+  
+  .description h3 {
+    margin-bottom: 10px;
+  }
+  
+  .description pre {
+    margin-bottom: 20px;
+  }
+  
+  .description .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+ 
+
+  /* styles for small screens */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 0;
+  }
+
+  .feature,
+  .description {
+    width: 100%;
+  }
+
+  .itemOne,
+  .itemTwo,
+  .itemThree,
+  .itemFour,
+  .itemFive,
+  .itemSix,
+  .itemSeven,
+  .itemEight,
+  .itemNine {
+    background-size: cover;
+  }
+}
+
+/* styles for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 20px;
+  }
+
+  .feature {
+    width: 45%;
+  }
+
+  .description {
+    width: 50%;
+  }
+}
+
+/* styles for large screens */
+@media (min-width: 1025px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 900px;
+  }
+
+  .feature {
+    width: 30%;
+  }
+
+  .description {
+    width: 60%;
+  }
+}

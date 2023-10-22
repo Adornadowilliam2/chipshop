@@ -1,0 +1,275 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  body{
+    background-color: rgb(0, 51, 99);
+  }
+
+  .logo {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( rgb(114, 114, 221), skyblue);
+    cursor: pointer;
+  }
+
+  .logo :hover{
+    color: red;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav {
+    grid-column: 2;
+    text-align: right;
+    margin: auto;
+  }
+
+  nav :hover{
+    color: red;
+  }
+
+  nav a{
+    text-decoration: none;
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  nav a :hover{
+    color: red;
+  }
+
+  .welcome {
+    text-align: center;
+    color: #020202;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 240px;
+    background-color: #ffffffe5;
+  }
+
+  .welcome h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .welcome p {
+    font-size: 18px;
+  }
+
+  span{
+    font-size: 40px;
+  }
+
+  .full-screen {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/cpu.jpg");
+    background-size: cover;
+  }
+  
+  .search {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .search button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .split-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+  
+  .quote {
+    grid-column: 1;
+    padding: 20px;
+    color: #f2f2f2;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .quote blockquote{
+    background-color: black;
+  }
+  
+  .person {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .person img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid-section {
+    padding: 20px;
+    border-style: dashed;
+    border-color: #000000;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .grid-section h2{
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .grid-section div img{
+    width: 350px;
+    height: 350px;
+  }
+
+  .grid-section h4{
+    margin-top: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .grid-button{
+    background-color: #adadad;
+  }
+
+/* styles for small screens */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 0;
+  }
+
+  .feature,
+  .description {
+    width: 100%;
+  }
+
+  .itemOne,
+  .itemTwo,
+  .itemThree,
+  .itemFour,
+  .itemFive,
+  .itemSix,
+  .itemSeven,
+  .itemEight,
+  .itemNine {
+    background-size: cover;
+  }
+}
+
+/* styles for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 20px;
+  }
+
+  .feature {
+    width: 45%;
+  }
+
+  .description {
+    width: 50%;
+  }
+}
+
+/* styles for large screens */
+@media (min-width: 1025px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .logo-ryzen,
+  .logo-intel {
+    margin-right: 900px;
+  }
+
+  .feature {
+    width: 30%;
+  }
+
+  .description {
+    width: 60%;
+  }
+}
