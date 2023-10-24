@@ -205,71 +205,24 @@ header {
     background-color: #adadad;
   }
 
-/* styles for small screens */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
 
-  .logo-ryzen,
-  .logo-intel {
-    margin-right: 0;
-  }
-
-  .feature,
-  .description {
-    width: 100%;
-  }
-
-  .itemOne,
-  .itemTwo,
-  .itemThree,
-  .itemFour,
-  .itemFive,
-  .itemSix,
-  .itemSeven,
-  .itemEight,
-  .itemNine {
-    background-size: cover;
-  }
+@media (max-width: 768px) {
+    /* Add CSS rules for smaller screens */
 }
 
-/* styles for medium screens */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    flex-wrap: wrap;
-  }
-
-  .logo-ryzen,
-  .logo-intel {
-    margin-right: 20px;
-  }
-
-  .feature {
-    width: 45%;
-  }
-
-  .description {
-    width: 50%;
-  }
+@media (min-width: 769px) {
+    /* Add CSS rules for larger screens */
 }
 
-/* styles for large screens */
-@media (min-width: 1025px) {
-  .container {
-    justify-content: space-between;
-  }
+@media (max-width: 599px) {
+    body {
+        font-size: 14px;
+    }
+}
 
-  .logo-ryzen,
-  .logo-intel {
-    margin-right: 900px;
-  }
-
-  .feature {
-    width: 30%;
-  }
-
-  .description {
-    width: 60%;
-  }
+/* Style for screens larger than 600px */
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
 }
