@@ -86,6 +86,7 @@ header {
   }
 
   .full-screen {
+    max-width: 100%;
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
