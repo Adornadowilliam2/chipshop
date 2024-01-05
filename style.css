@@ -229,7 +229,7 @@ header {
       }
 
         .grid-item img {
-    width: 50px;
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
   }
@@ -255,7 +255,7 @@ header {
         grid-template-columns: 1fr;
       }
         .grid-item img {
-    width: 100%;
+    width: 100px;
     height: auto;
   }
     }
