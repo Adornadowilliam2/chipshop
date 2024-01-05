@@ -229,7 +229,7 @@ header {
       }
 
         .grid-item img {
-    width: auto;
+    width: 50px;
     height: auto;
     margin-bottom: 10px;
   }
