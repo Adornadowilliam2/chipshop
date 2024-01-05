@@ -206,3 +206,40 @@ header {
   .grid-button{
     background-color: #adadad;
   }
+
+   @media screen and (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      .welcome {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .search{
+        position: absolute;
+        top: 80%;
+        transform: translateY(-100%);
+      }
+
+      .split-screen {
+        grid-template-columns: 1fr;
+      }
+
+      .quote,
+      .person {
+        grid-column: 1;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
