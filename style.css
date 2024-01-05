@@ -228,6 +228,18 @@ header {
         transform: translateY(-100%);
       }
 
+        .grid-item img {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+        .person img {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
       .split-screen {
         grid-template-columns: 1fr;
       }
