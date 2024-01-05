@@ -254,4 +254,8 @@ header {
       .grid-container {
         grid-template-columns: 1fr;
       }
+        .grid-item img {
+    width: 100%;
+    height: auto;
+  }
     }
