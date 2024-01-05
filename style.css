@@ -239,6 +239,10 @@ header {
     height: auto;
     margin: auto;
   }
+       .grid-section div img{
+    width: 100px;
+    height: 100px;
+  }
 
       .split-screen {
         grid-template-columns: 1fr;
@@ -257,5 +261,9 @@ header {
         .grid-item img {
     width: 100px;
     height: auto;
+  }
+        .grid-section div img{
+    width: 100px;
+    height: 100px;
   }
     }
