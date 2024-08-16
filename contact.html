@@ -1,86 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="image/BMO logo.png">
-    <style>
-body{
-    background-image: linear-gradient(rgb(21, 189, 245), skyblue);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.container {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-text-align: center;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-pre{
-    font-size: 20px;
-}
-    </style>
-</head>
-<body>
+    <link rel="shortcut icon" href="image/BMO logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-          
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="feedback">Feedback:</label>
-                <textarea id="feedback" name="feedback" rows="5" required></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section> 
-    <pre>
-    09296407470 - Globe
-    09814363602 - Smart
-    gmail: adornadowilliam@gmail.com
-    yahoo.com:wiliamadornado6@yahoo.com
-    </pre>
-    <br>
-    <a href="index.html"><button style="font-size: 20px; margin-left: 50px;">Back</button></a>
-</body>
+      <div class="close-btn"></div>
+      <div class="wrapper">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username.."
+            required
+          />
+          <label for="feedback">Feedback:</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            required
+            placeholder="Feedback.."
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <pre>
+        09296407470 - Globe
+        09814363602 - Smart
+        gmail: adornadowilliam@gmail.com
+        yahoo.com:wiliamadornado6@yahoo.com
+        </pre
+      >
+    </section>
+  </body>
 </html>
+<script src="script.js"></script>

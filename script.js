@@ -5,3 +5,21 @@ starContainer.forEach((container) => {
     container.innerHTML += `<h4>&#11088</h4>`;
   }
 });
+
+const closeBtn = document.querySelector(".close-btn");
+
+closeBtn.innerHTML = `
+  <a href="index.html">
+    <img
+      src="./image/close.png"
+      alt="close btn"
+      style="
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+      "
+      width="50px"
+    />
+  </a>
+`;
