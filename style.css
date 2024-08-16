@@ -1,269 +1,375 @@
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  body{
-    background-color: rgb(0, 51, 99);
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .logo {
-    grid-column: 1;
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient( rgb(114, 114, 221), skyblue);
-    cursor: pointer;
-  }
+body {
+  background-color: rgb(0, 51, 99);
+}
 
-  .logo :hover{
-    color: red;
-  }
-  
-  .logo img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  nav {
-    grid-column: 2;
-    text-align: right;
-    margin: auto;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-  nav :hover{
-    color: red;
-  }
+.logo img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
 
-  nav a{
-    text-decoration: none;
-    font-size: 35px;
-    border-style: solid;
-    border-color: black;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  nav a :hover{
-    color: red;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgb(114, 114, 221), skyblue);
+  padding: 10px;
+}
 
-  .welcome {
-    text-align: center;
-    color: #020202;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 240px;
-    background-color: #ffffffe5;
-  }
+nav a {
+  text-decoration: none;
+  font-size: 35px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  color: #fff;
+}
 
-  .welcome h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .welcome p {
-    font-size: 18px;
-  }
+nav ul {
+  list-style: none;
+}
 
-  span{
-    font-size: 40px;
-  }
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
 
-  .full-screen {
-    max-width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("image/cpu.jpg");
-    background-size: cover;
-  }
-  
-  .search {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search input[type="text"] {
-    border: none;
-    background-color: transparent;
-    font-size: 18px;
-    padding: 10px;
-    flex: 1;
-  }
-  
-  .search button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .split-screen {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
-  }
-  
-  .quote {
-    grid-column: 1;
-    padding: 20px;
-    color: #f2f2f2;
-    text-align: justify;
-    line-height: 1.5;
-  }
+.welcome {
+  text-align: center;
+  color: #020202;
+  background-color: #ffffffe5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
 
-  .quote blockquote{
-    background-color: black;
-  }
-  
-  .person {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .person img {
-    max-width: 100%;
-    height: auto;
-  }
+.welcome h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-  .grid-section {
-    padding: 20px;
-    border-style: dashed;
-    border-color: #000000;
-    margin-top: 20px;
-    cursor: pointer;
-    max-width: 100%;
-  }
+.welcome p {
+  color: #333333;
+}
 
-  .grid-section h2{
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.full-screen {
+  max-width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("image/cpu.jpg");
+  background-size: cover;
+}
 
-  .grid-section div img{
-    width: 350px;
-    height: 350px;
-  }
+.search {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
 
-  .grid-section h4{
-    margin-top: 5px;
-  }
+.search input[type="text"] {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px;
+  flex: 1;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .grid-item {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .grid-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .grid-item p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+.search button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
-  .grid-button{
-    background-color: #adadad;
-  }
+/* ================================ */
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.split-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
 
-   @media screen and (max-width: 768px) {
-      header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-      }
+.quote {
+  grid-column: 1;
+  padding: 20px;
+  color: #f2f2f2;
+  text-align: justify;
+  line-height: 1.5;
+}
 
-      nav {
-        text-align: center;
-      }
+.quote blockquote {
+  background-color: black;
+}
 
-      .welcome {
-        top: 50%;
-        transform: translateY(-50%);
-      }
+.person {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      .search{
-        position: absolute;
-        top: 80%;
-        transform: translateY(-100%);
-      }
+.person img {
+  max-width: 100%;
+  height: auto;
+}
 
-        .grid-item img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-  }
+.grid-section {
+  padding: 20px;
+  border-style: dashed;
+  border-color: #000000;
+  margin-top: 20px;
+  cursor: pointer;
+  max-width: 100%;
+}
 
-        .person img {
-    width: auto;
-    height: auto;
-    margin: auto;
-  }
-       .grid-section div img{
-    width: 100px;
-    height: 100px;
-  }
+.grid-section h2 {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-      .split-screen {
-        grid-template-columns: 1fr;
-      }
+.grid-section div img {
+  width: 350px;
+  height: 350px;
+}
 
-      .quote,
-      .person {
-        grid-column: 1;
-      }
-    }
+.grid-section h4 {
+  margin-top: 5px;
+}
 
-    @media screen and (max-width: 480px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
-        .grid-item img {
-    width: 100px;
-    height: auto;
-  }
-        .grid-section div img{
-    width: 100px;
-    height: 100px;
-  }
-    }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.grid-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.grid-button {
+  background-color: #adadad;
+}
+
+/*Logo bakground for ryzen*/
+.logo-ryzen {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 900px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(orangered, rgb(19, 18, 17));
+  border-style: solid;
+  border-color: black;
+}
+
+.logo-ryzen img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/*Logo bakground for intel*/
+.logo-intel {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 900px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(rgb(39, 26, 219), rgb(19, 204, 236));
+  border-style: solid;
+  border-color: black;
+}
+
+.logo-intel img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+/*#################################*/
+
+span {
+  font-size: 40px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*All Photo Background code*/
+.itemOne {
+  background-image: url(../image/ryzenthread.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemTwo {
+  background-image: url(../image/ryzen7.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemThree {
+  background-image: url(../image/inteli5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemFour {
+  background-image: url(../image/inteli3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemFive {
+  background-image: url(../image/ryzen5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemSix {
+  background-image: url(../image/ryzen3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemSeven {
+  background-image: url(../image/intelkf.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemEight {
+  background-image: url(../image/ryzen3d.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.itemNine {
+  background-image: url(../image/intelcore.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/*#################################*/
+
+.feature {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(240, 248, 255, 0.699);
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.feature h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.feature h2 {
+  margin: 0;
+  color: orangered;
+}
+
+.feature h4 {
+  margin: 0;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.description {
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cccccccb;
+}
+
+.description h3 {
+  margin-bottom: 10px;
+}
+
+.description pre {
+  margin-bottom: 20px;
+}
+
+.description .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
