@@ -1,11 +1,3 @@
-const starContainer = document.querySelectorAll(".star-container");
-
-starContainer.forEach((container) => {
-  for (let i = 0; i < 5; i++) {
-    container.innerHTML += `<h4>&#11088</h4>`;
-  }
-});
-
 const closeBtn = document.querySelector(".close-btn");
 
 if (closeBtn) {
@@ -14,13 +6,7 @@ if (closeBtn) {
       <img
         src="./image/close.png"
         alt="close btn"
-        style="
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 10px;
-        "
-        width="50px"
+        class="closebtn"
       />
     </a>
   `;
@@ -28,34 +14,81 @@ if (closeBtn) {
   console.error("No close button found.");
 }
 
-const priceArray = [
-  "₱254,205.08",
-  "₱13,280.67",
-  "₱8,007.00",
-  "₱5,901.95",
-  "₱19,807.50",
-  "₱13,280.67",
-  "₱11,242.03",
-  "₱20,602.07",
-  "₱32,577.37",
+const data = [
+  {
+    id: 1,
+    name: "AMD Ryzen Threadripper 3990X",
+    image: "image/Ryzen 3990x.jpg",
+    price: "₱254,205.08",
+  },
+  {
+    id: 2,
+    name: "AMD Ryzen 7 5800X",
+    image: "image/Ryzen 7 5800X.jpg",
+    price: "₱13,280.67",
+  },
+  {
+    id: 3,
+    name: "Intel Core i5-10400",
+    image: "image/Intel Core I5-10400.jpg",
+    price: "₱8,007.00",
+  },
+  {
+    id: 4,
+    name: "Intel Core I3-10100",
+    image: "image/Intel Core I3-10100.jpg",
+    price: "₱5,901.95",
+  },
+  {
+    id: 5,
+    name: "AMD Ryzen 5 3600",
+    image: "image/Ryzen 5 3600.jpg",
+    price: "₱19,807.50",
+  },
+  {
+    id: 6,
+    name: "AMD Ryzen 3 3100",
+    image: "image/Ryzen 3 3100.jpg",
+    price: "₱13,280.67",
+  },
+  {
+    id: 7,
+    name: "Intel Core I5-11600KF",
+    image: "image/Intel Core I5-11600KF.jpg",
+    price: "₱11,242.03",
+  },
+  {
+    id: 8,
+    name: "AMD Ryzen 7 7800X3D",
+    image: "image/AMD Ryzen 7 7800X3D.jpg",
+    price: "₱20,602.07",
+  },
+  {
+    id: 9,
+    name: "Intel Core I9-14900KF",
+    image: "image/Intel Core I9-14900KF.jpg",
+    price: "₱32,577.37",
+  },
 ];
 
-// Function to set prices in h3 elements
-function setPrices() {
-  // Get all h3 elements inside .flex-item
-  const h3Elements = document.querySelectorAll(".flex-item h3");
-
-  // Check if the length of h3Elements matches the length of priceArray
-  if (h3Elements.length !== priceArray.length) {
-    console.error("Number of h3 elements does not match number of prices.");
-    return;
-  }
-
-  // Iterate over each h3 element and set the price from priceArray
-  h3Elements.forEach((h3, index) => {
-    h3.textContent = priceArray[index];
-  });
+// retrieve all using for loop
+let flexsection = document.querySelector(".flex-container");
+for (let i = 0; i < data.length; i++) {
+  flexsection.innerHTML += ` 
+    <div class="flex-item">
+      <img src="${data[i].image}" alt="Image ${data[i].id}" />
+      <h3>${data[i].name}</h3>
+      <p>${data[i].price}</p>
+      <div class="star-container"></div>
+      <a href="item/item${data[i].id}.html"><button class="flex-button">Add to Cart</button></a>
+    </div>
+  `;
 }
 
-// Call the function to set prices
-setPrices();
+const starContainer = document.querySelectorAll(".star-container");
+
+starContainer.forEach((container) => {
+  for (let i = 0; i < 5; i++) {
+    container.innerHTML += `<h4>&#11088</h4>`;
+  }
+});

@@ -36,6 +36,14 @@ em {
   margin-right: 10px;
 }
 
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  width: 50px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
