@@ -100,7 +100,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("image/cpu.jpg");
+  background-image: url("media/cpu.jpg");
   background-size: cover;
   font-family: "Jost", sans-serif;
 }
@@ -256,63 +256,63 @@ span {
 
 /*All Photo Background code*/
 .itemOne {
-  background-image: url(../image/ryzenthread.jpg);
+  background-image: url(media/ryzenthread.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemTwo {
-  background-image: url(../image/ryzen7.jpg);
+  background-image: url(media/ryzen7.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemThree {
-  background-image: url(../image/inteli5.jpg);
+  background-image: url(media/inteli5.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemFour {
-  background-image: url(../image/inteli3.jpg);
+  background-image: url(media/inteli3.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemFive {
-  background-image: url(../image/ryzen5.jpg);
+  background-image: url(media/ryzen5.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemSix {
-  background-image: url(../image/ryzen3.jpg);
+  background-image: url(media/ryzen3.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemSeven {
-  background-image: url(../image/intelkf.jpg);
+  background-image: url(media/intelkf.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemEight {
-  background-image: url(../image/ryzen3d.png);
+  background-image: url(media/ryzen3d.png);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .itemNine {
-  background-image: url(../image/intelcore.jpg);
+  background-image: url(media/intelcore.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
