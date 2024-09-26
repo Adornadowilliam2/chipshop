@@ -25,7 +25,7 @@ const data = [
   {
     id: 2,
     name: "AMD Ryzen 7 5800X",
-    image: "image/Ryzen 7 5800X.jpg",
+    image: "image/Ryzen 7 5800X.png",
     price: "₱13,280.67",
     rating: "⭐⭐⭐⭐⭐",
   },
