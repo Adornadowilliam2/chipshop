@@ -18,14 +18,14 @@ const data = [
   {
     id: 1,
     name: "AMD Ryzen Threadripper 3990X",
-    image: "image/Ryzen 3990x.jpg",
+    image: "image/Ryzen3990x.jpg",
     price: "₱254,205.08",
     rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 2,
     name: "AMD Ryzen 7 5800X",
-    image: "image/Ryzen 7 5800X.png",
+    image: "image/Ryzen75800X.jpg",
     price: "₱13,280.67",
     rating: "⭐⭐⭐⭐⭐",
   },
@@ -46,14 +46,14 @@ const data = [
   {
     id: 5,
     name: "AMD Ryzen 5 3600",
-    image: "image/Ryzen 5 3600.jpg",
+    image: "image/Ryzen53600.jpg",
     price: "₱19,807.50",
     rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 6,
     name: "AMD Ryzen 3 3100",
-    image: "image/Ryzen 3 3100.jpg",
+    image: "image/Ryzen33100.jpg",
     price: "₱13,280.67",
     rating: "⭐⭐⭐⭐⭐",
   },
@@ -67,7 +67,7 @@ const data = [
   {
     id: 8,
     name: "AMD Ryzen 7 7800X3D",
-    image: "image/AMD Ryzen 7 7800X3D.jpg",
+    image: "image/Ryzen77800X3D.jpg",
     price: "₱20,602.07",
     rating: "⭐⭐⭐⭐⭐",
   },
