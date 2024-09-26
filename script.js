@@ -88,11 +88,17 @@ for (let i = 0; i < data.length; i++) {
   } else {
     flexsection.innerHTML += ` 
     <div class="flex-item">
-      <img src="${data[i].image}" alt="Image ${data[i].id}" />
+      <img src="${
+        data[i].image
+          ? data[i].image
+          : "https://github.com/Adornadowilliam2/chipshop/blob/main/media/Ryzen%207%205800x.jpg?raw=true"
+      }" alt="Image ${data[i].id}" />
       <h3>${data[i].name}</h3>
       <p>${data[i].price}</p>
       <div class="star-container"></div>
-      <a href="item/item${data[i].id}.html"><button class="flex-button">Add to Cart</button></a>
+      <a href="item/item${
+        data[i].id
+      }.html"><button class="flex-button">Add to Cart</button></a>
     </div>
   `;
   }
