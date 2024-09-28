@@ -6,7 +6,7 @@ if (!closeBtn) {
   closeBtn.innerHTML = `
     <a href="index.html">
       <img
-        src="./image/close.png"
+        src="./media/close.png"
         alt="close btn"
         class="closebtn"
       />
